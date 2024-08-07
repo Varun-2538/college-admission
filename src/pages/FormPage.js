@@ -27,7 +27,7 @@ const FormPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ag9zouh', 'template_dfhfd8a', e.target, 'kS_94InM8xQOrVMJx')
+    emailjs.sendForm('service_efjeq0m', 'template_grzp0dr', e.target, 'kS_94InM8xQ0rVMJx')
       .then((result) => {
           console.log('SUCCESS!', result.text);
           alert('Email sent successfully!');
