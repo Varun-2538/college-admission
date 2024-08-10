@@ -1,18 +1,22 @@
-// src/MainPage.js
 import React from 'react';
 import './index.css'; // Ensure Tailwind CSS is imported
 import CarouselPage from './pages/CarouselPage'; // Import the CarouselPage component
 import FormPage from './pages/FormPage';
+import CoursesPage from './components/CoursePage'; // Import the CoursesPage component
+import Navbar from './components/Navbar'; // Import Navbar component
 
 const MainPage = () => {
   return (
-    <div>
-      <div className="min-h-screen bg-college-bg bg-cover bg-center flex flex-col items-center justify-center text-center">
-        {/* <h1 className="text-2xl text-white">College Admission</h1>
-        <p className="text-lg text-white">Welcome to the College Admission portal.</p> */}
+    <div className="relative">
+      <Navbar /> {/* Add Navbar at the top, it's positioned fixed */}
+      <div className="min-h-screen bg-college-bg bg-cover bg-center flex flex-col items-center justify-center text-center pt-16">
+        {/* Padding top (pt-16) here equals the height of the Navbar */}
       </div>
       <CarouselPage /> {/* Include the CarouselPage component */}
-      <FormPage />
+      <CoursesPage /> {/* Include the CoursesPage component */}
+      <div id="formPage">
+        <FormPage />
+      </div>
     </div>
   );
 };

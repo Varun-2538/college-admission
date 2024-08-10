@@ -1,6 +1,5 @@
-// src/App.js
 import React from 'react';
-import MainPage from './Mainpage';
+import MainPage from './Mainpage'; // Ensure the correct import path
 import './index.css';
 
 function App() {
