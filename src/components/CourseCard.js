@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const CourseCard = ({ title, duration, fee, buttonText }) => {
   return (
-    <div className="bg-[#FAF3E0] text-[#3E3E3E] rounded-lg shadow-md p-4 m-2 transform transition-transform hover:scale-105">
+    <div className="bg-[#DBF9F4] text-[#3E3E3E] rounded-lg shadow-md p-4 m-2 transform transition-transform hover:scale-105">
       <h3 className="text-xl font-semibold">{title}</h3>
       <div className="mt-2 flex items-center">
         <i className="fas fa-clock mr-2"></i>

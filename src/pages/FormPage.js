@@ -1,7 +1,8 @@
-// src/pages/FormPage.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import 'tailwindcss/tailwind.css';
+import image2 from '../assets/rocket.svg';
+import StarsCanvas from '../components/StarsCanvas'; // Import the StarsCanvas component
 
 const FormPage = () => {
   const [formData, setFormData] = useState({
@@ -40,8 +41,9 @@ const FormPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex">
-      <div className="w-1/2 flex items-center justify-center bg-gray-100 p-8">
+    <div className="relative min-h-screen flex">
+      <StarsCanvas /> {/* Add the stars background */}
+      <div className="w-1/2 flex items-center justify-center bg-gray-100 p-8 z-10">
         <form className="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg" onSubmit={handleSubmit}>
           <h2 className="text-2xl font-bold mb-8 text-center">College Admission Form</h2>
           <div className="mb-4">
@@ -123,9 +125,8 @@ const FormPage = () => {
           </div>
         </form>
       </div>
-      <div className="w-1/2 flex items-center justify-center bg-gray-200">
-        {/* Add your image or GLTF model here */}
-        <img src="path/to/your/image.png" alt="College Admission" className="max-w-full h-auto rounded-lg" />
+      <div className="w-1/2 flex items-center justify-center bg-gray-200 z-10">
+        <img src={image2} alt="College Admission" className="max-w-full h-auto rounded-lg" />
       </div>
     </div>
   );
