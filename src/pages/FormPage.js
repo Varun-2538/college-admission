@@ -164,7 +164,7 @@ const FormPage = () => {
             <input 
               type="text" 
               name="stream" 
-              placeholder="Select Stream" 
+              placeholder="Enter Stream" 
               className="w-full p-2 border rounded" 
               onChange={handleChange}
               required 
