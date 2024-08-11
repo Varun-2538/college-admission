@@ -2,24 +2,34 @@ import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { scroller } from 'react-scroll';
-import image1 from '../assets/1.png';  // Ensure the path to your images is correct
+import image1 from '../assets/1.png';
+import image2 from '../assets/images 1.png';
+import image3 from '../assets/images 2.png';
+import image4 from '../assets/images 3.png';
+import image5 from '../assets/images 4.png';
+import image6 from '../assets/i4.png';
+import image7 from '../assets/i 5.png';
+import image8 from '../assets/i 6.png';
+import image9 from '../assets/i 7.png';
+import image10 from '../assets/i 8.png';
+import image11 from '../assets/i 9.png';
 
 const colleges = [
-    { name: "SRM University Chennai", about: "About SRM University Chennai" },
-    { name: "SSN College of Engineering", about: "About SSN College of Engineering" },
-    { name: "Anna University", about: "About Anna University" },
-    { name: "VIT Vellore Chennai", about: "About VIT Vellore Chennai" },
-    { name: "Presidency College Chennai", about: "About Presidency College Chennai" },
-    { name: "Christ University", about: "About Christ University" },
-    { name: "Bangalore University (BU)", about: "About Bangalore University" },
-    { name: "Ramaiah Institute of Technology", about: "About Ramaiah Institute of Technology" },
-    { name: "R. V. College of Engineering", about: "About R. V. College of Engineering" },
-    { name: "Bhusanayana Mukundadas Sreenivasaiah College of Engineering (BMSCE)", about: "About BMSCE" },
-    { name: "PES University", about: "About PES University" }
+    { name: "SRM University Chennai", about: "About SRM University Chennai", image: image1 },
+    { name: "SSN College of Engineering", about: "About SSN College of Engineering", image: image6 },
+    { name: "Anna University", about: "About Anna University", image: image5 },
+    { name: "VIT Vellore Chennai", about: "About VIT Vellore Chennai", image: image7 },
+    { name: "Presidency College Chennai", about: "About Presidency College Chennai", image: image9 },
+    { name: "Christ University", about: "About Christ University", image: image10 },
+    { name: "Bangalore University (BU)", about: "About Bangalore University", image: image11 },
+    { name: "Ramaiah Institute of Technology", about: "About Ramaiah Institute of Technology", image: image2 },
+    { name: "R. V. College of Engineering", about: "About R. V. College of Engineering", image: image3 },
+    { name: "BMS College of Engineering (BMSCE)", about: "About BMSCE", image: image4 },
+    { name: "PES University", about: "About PES University", image: image8 }
 ];
 
 const cardsData = colleges.map(college => ({
-    collegeImage: image1,
+    collegeImage: college.image,
     collegeName: college.name,
     frontContent: college.about,
     backContent: `Learn more about ${college.name}`
@@ -63,7 +73,7 @@ const CarouselPage = () => {
     };
 
     return (
-        <div style={{ backgroundColor: '#F5F5F5' }}>  {/* Set the background color for the carousel */}
+        <div style={{ backgroundColor: '#F5F5F5' }}>
             <Carousel responsive={responsive} infinite={true} autoPlay={false} autoPlaySpeed={3000} keyBoardControl={true} swipeable={true} draggable={true}>
                 {cardsData.map((card, index) => (
                     <div key={index} className="card-container p-4 flex justify-center">
