@@ -13,6 +13,7 @@ const FormPage = () => {
     state: '',
     city: '',
     percentage: '',
+    college: '', // College name field
     stream: '',
     reply_to: '',
   });
@@ -109,6 +110,27 @@ const FormPage = () => {
               onChange={handleChange}
               required 
             />
+          </div>
+          <div className="mb-4">
+            <select 
+              name="college" 
+              className="w-full p-2 border rounded" 
+              onChange={handleChange}
+              required
+            >
+              <option value="">Select College</option>
+              <option value="SRM University Chennai">SRM University Chennai</option>
+              <option value="SSN College of Engineering">SSN College of Engineering</option>
+              <option value="Anna University">Anna University</option>
+              <option value="VIT Vellore">VIT Vellore</option>
+              <option value="Presidency College, Chennai">Presidency College, Chennai</option>
+              <option value="Christ University, Bangalore">Christ University, Bangalore</option>
+              <option value="Bangalore University">Bangalore University</option>
+              <option value="Ramaiah Institute of Technology">Ramaiah Institute of Technology</option>
+              <option value="R.V. College of Engineering">R.V. College of Engineering</option>
+              <option value="BMS College of Engineering">BMS College of Engineering</option>
+              <option value="PES University">PES University</option>
+            </select>
           </div>
           <div className="mb-4">
             <input 

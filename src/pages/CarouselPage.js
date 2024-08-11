@@ -15,24 +15,101 @@ import image10 from '../assets/i 8.png';
 import image11 from '../assets/i 9.png';
 
 const colleges = [
-    { name: "SRM University Chennai", about: "About SRM University Chennai", image: image1 },
-    { name: "SSN College of Engineering", about: "About SSN College of Engineering", image: image6 },
-    { name: "Anna University", about: "About Anna University", image: image5 },
-    { name: "VIT Vellore Chennai", about: "About VIT Vellore Chennai", image: image7 },
-    { name: "Presidency College Chennai", about: "About Presidency College Chennai", image: image9 },
-    { name: "Christ University", about: "About Christ University", image: image10 },
-    { name: "Bangalore University (BU)", about: "About Bangalore University", image: image11 },
-    { name: "Ramaiah Institute of Technology", about: "About Ramaiah Institute of Technology", image: image2 },
-    { name: "R. V. College of Engineering", about: "About R. V. College of Engineering", image: image3 },
-    { name: "BMS College of Engineering (BMSCE)", about: "About BMSCE", image: image4 },
-    { name: "PES University", about: "About PES University", image: image8 }
+    { 
+        name: "SRM University Chennai", 
+        about: `
+        - NIRF Ranking 2024: 18th in overall category, 24th in engineering category.
+        - NAAC Accreditation: "A++" grade.
+        `,
+        image: image1 
+    },
+    { 
+        name: "SSN College of Engineering", 
+        about: `
+        - NIRF Ranking 2023: 45th in engineering category.
+        - NAAC Accreditation: "A++" grade.
+        `,
+        image: image6 
+    },
+    { 
+        name: "Anna University", 
+        about: `
+        - NIRF Ranking 2024: 13th in overall category, 22nd in engineering category.
+        - NAAC Accreditation: "A" grade.
+        `,
+        image: image5 
+    },
+    { 
+        name: "VIT Vellore Chennai", 
+        about: `
+        - NIRF Ranking 2024: 8th in engineering category.
+        - NAAC Accreditation: "A++" grade.
+        `,
+        image: image7 
+    },
+    { 
+        name: "Presidency College Chennai", 
+        about: `
+        - NIRF Ranking 2023: 7th in college category.
+        - NAAC Accreditation: "A" grade.
+        `,
+        image: image9 
+    },
+    { 
+        name: "Christ University", 
+        about: `
+        - NIRF Ranking 2024: 19th in overall category.
+        - NAAC Accreditation: "A++" grade.
+        `,
+        image: image10 
+    },
+    { 
+        name: "Bangalore University (BU)", 
+        about: `
+        - NIRF Ranking 2024: 100-150 in university category.
+        - NAAC Accreditation: "A" grade.
+        `,
+        image: image11 
+    },
+    { 
+        name: "Ramaiah Institute of Technology", 
+        about: `
+        - NIRF Ranking 2024: 67th in engineering category.
+        - NAAC Accreditation: "A" grade.
+        `,
+        image: image2 
+    },
+    { 
+        name: "R. V. College of Engineering", 
+        about: `
+        - NIRF Ranking 2024: 89th in engineering category.
+        - NAAC Accreditation: "A++" grade.
+        `,
+        image: image3 
+    },
+    { 
+        name: "BMS College of Engineering (BMSCE)", 
+        about: `
+        - NIRF Ranking 2024: 83rd in engineering category.
+        - NAAC Accreditation: "A++" grade.
+        `,
+        image: image4 
+    },
+    { 
+        name: "PES University", 
+        about: `
+        - NIRF Ranking 2024: 32nd in university category.
+        - NAAC Accreditation: "A" grade.
+        `,
+        image: image8 
+    }
 ];
 
 const cardsData = colleges.map(college => ({
     collegeImage: college.image,
     collegeName: college.name,
     frontContent: college.about,
-    backContent: `Learn more about ${college.name}`
+    backContent: college.about
 }));
 
 const responsive = {
@@ -87,7 +164,7 @@ const CarouselPage = () => {
                                     <button className="bg-blue-300 p-2 flex-1" style={{ backgroundColor: '#F0FFFF' }} onClick={handleRegisterClick}>Register</button>
                                 </div>
                             </div>
-                            <div className="back p-4 flex flex-col items-center justify-center text-white" 
+                            <div className="back p-4 flex flex-col items-center justify-center text-black" 
                                 style={{ 
                                     backfaceVisibility: 'hidden', 
                                     transform: 'rotateY(180deg)', 
