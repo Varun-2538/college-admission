@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#7D6F52] text-white flex items-center justify-between p-4 shadow-lg z-50">
       <div className="flex items-center">
         {/* <img src="/path/to/logo.png" alt="Logo" className="h-8 mr-2" /> */}
-        <span className="text-lg font-semibold">Admissions Solution</span>
+        <span className="text-lg font-semibold">The Admissions Solution</span>
       </div>
       <div className="flex items-center">
         <a href="tel:+919228163299" className="flex items-center mr-4">
