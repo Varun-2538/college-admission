@@ -51,11 +51,7 @@ const MainPage = () => {
                 className="m-2"
                 onClick={scrollToFormPage}
               />
-              <FloatingButton
-                name="Management"
-                className="m-2"
-                onClick={scrollToFormPage}
-              />
+              
             </div>
           </div>
         </div>
