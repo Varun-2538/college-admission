@@ -32,6 +32,7 @@ const MainPage = () => {
             <p className="text-2xl md:text-3xl text-black font-bold mt-16 md:mt-24 ml-4 md:ml-20 lg:ml-60">
               Don't Worry For 12th Marks
             </p>
+            
             <p className="text-xl md:text-2xl font-bold text-blue-800 mt-4 ml-4 md:ml-20 lg:ml-60">
               Explore Our UG & PG Program
             </p>
