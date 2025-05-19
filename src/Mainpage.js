@@ -25,7 +25,7 @@ const MainPage = () => {
           className="text-xl md:text-2xl font-bold text-white bg-blue-600 px-4 py-2 rounded-lg shadow-lg border-2 border-white mt-4 animate-pulse cursor-pointer"
           onClick={scrollToFormPage}
         >
-          Admission Open 2024-25
+          Admission Open
         </p>
         <div className="flex justify-start w-full px-4 md:px-10">
           <div className="text-left w-full">

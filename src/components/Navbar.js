@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center">
         <a href="tel:+919228163299" className="flex items-center mr-4">
-          <i className="fas fa-phone-alt mr-1"></i> +91 9228163299
+          <i className="fas fa-phone-alt mr-1"></i> +91 8122394803
         </a>
         <a href="mailto:marketing@admissionssolution.com" className="flex items-center">
           <i className="fas fa-envelope mr-1"></i> marketing@admissionssolution.com
